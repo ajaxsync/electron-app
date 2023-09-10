@@ -25,7 +25,14 @@ module.exports = {
   plugins: [
     {
       name: '@electron-forge/plugin-auto-unpack-natives',
-      config: {},
+      config: {
+        repository: {
+          owner: 'ajaxsync',
+          name: 'electron-app'
+        },
+        prerelease: false,
+        draft: true
+      },
     },
   ],
 };
